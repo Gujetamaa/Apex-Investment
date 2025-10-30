@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Brand Colors — Apex (emerald + silver) */
+    --color-primary: #0B5D47;                 /* Emerald */
+    --color-primary-foreground: #FFFFFF;      /* White */
+    --color-secondary: #C0C0C0;               /* Silver */
+    --color-secondary-foreground: #0B5D47;    /* Emerald on silver */
+    --color-accent: #1E7F5D;                  /* Lighter emerald */
+    --color-accent-foreground: #FFFFFF;
+
+    /* Background & Surface */
+    --color-background: #F9FAFB;              /* Gray-50-ish */
+    --color-foreground: #1F2937;              /* Gray-800/900 */
+    --color-surface: #F3F4F6;                 /* Subtle panel bg */
+    --color-card: #FFFFFF;
+    --color-card-foreground: #1F2937;
+    --color-popover: #FFFFFF;
+    --color-popover-foreground: #1F2937;
+
+    /* Text Hierarchy */
+    --color-muted: #F3F4F6;
+    --color-muted-foreground: #6B7280;
+
+    /* Interactive Elements */
+    --color-border: #E5E7EB;
+    --color-input: #FFFFFF;
+    --color-ring: #0B5D47;                    /* Emerald focus ring */
+
+    /* Status Colors */
+    --color-success: #16A34A;                 /* Green-600 */
+    --color-success-foreground: #FFFFFF;
+    --color-warning: #F59E0B;                 /* Amber-600 */
+    --color-warning-foreground: #FFFFFF;
+    --color-error: #DC2626;                   /* Red-600 */
+    --color-error-foreground: #FFFFFF;
+    --color-destructive: #DC2626;
+    --color-destructive-foreground: #FFFFFF;
+
+    /* Brand Specific */
+    --color-trust: #334155;                   /* Slate-700 vibe */
+    --color-trust-foreground: #FFFFFF;
+    --color-conversion: #0F7A5C;              /* Vibrant emerald for CTAs */
+    --color-conversion-foreground: #FFFFFF;
+    --color-growth: #0A4E3B;                  /* Deep green */
+    --color-growth-foreground: #FFFFFF;
+
+    /* Radius */
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  body, p, span, div, button, input, select, textarea {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-mono, code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .brand-shadow-subtle {
+    box-shadow: 0 2px 8px rgba(11, 93, 71, 0.08);   /* emerald-tinted */
+  }
+
+  .brand-shadow-elevated {
+    box-shadow: 0 4px 16px rgba(11, 93, 71, 0.12);
+  }
+
+  .brand-shadow-strong {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12);
+  }
+
+  .brand-transition {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .brand-hover-lift {
+    @apply brand-transition;
+  }
+
+  .brand-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .pulse-subtle {
+    animation: pulse-subtle 2s infinite;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+}
