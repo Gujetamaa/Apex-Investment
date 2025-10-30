@@ -243,7 +243,7 @@ const ContactConsultation = () => {
               iconPosition="left"
               onClick={() => window.open('tel:+15550109999', '_self')}
             >
-              Emergency Line: (555) 010-9999
+              Emergency Line: (555) 050-5321
             </Button>
           </div>
         </div>
@@ -328,7 +328,7 @@ const ContactConsultation = () => {
             <div>
               <h4 className="font-semibold mb-4">Important Links</h4>
               <div className="space-y-2 text-sm text-white/80">
-                <p>SEC Registration: CRD# 654321</p>
+                <p>SEC Registration: CRD# 1234567</p>
                 <p>Member FINRA/SIPC</p>
                 <p>Privacy Policy</p>
                 <p>Form ADV</p>

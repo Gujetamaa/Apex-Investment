@@ -21,11 +21,11 @@ const MarketInsightsHub = () => {
   // Mock data for insights
   const featuredInsight = {
     id: 'featured-1',
-    title: 'Federal Reserve Policy Shift: Implications for Portfolio Strategy in 2024',
-    excerpt: `The Federal Reserve's recent policy adjustments signal a significant shift in monetary policy direction. Our analysis reveals three key implications for investment portfolios:\n\n1. Interest rate sensitivity across asset classes\n2. Sector rotation opportunities in financials and technology\n3. Currency hedging strategies for international exposure\n\nThis comprehensive analysis examines historical precedents and provides actionable insights for navigating the evolving monetary landscape.`,
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop',category: 'Economic Outlook',
+    title: 'Fed Pivot Playbook: Positioning Portfolios for a New Rate Cycle',
+    excerpt: `As the Federal Reserve signals a potential shift in monetary policy, investors must adapt their strategies to navigate the changing interest rate environment. \n\nThis comprehensive analysis outlines key considerations for portfolio positioning in anticipation of a new rate cycle, including sector implications, duration management, and risk mitigation techniques.`,
+    image: 'https://images.unsplash.com/photo-1745509267945-b25cbb4d50ef?w=800&h=400&fit=crop',category: 'Economic Outlook',
     author: {
-      name: 'Dr. Hannah Lee',title: 'Chief Investment Strategist',avatar: 'https://randomuser.me/api/portraits/women/32.jpg'
+      name: 'Dr. Hannah Lee',title: 'Chief Investment Strategist',avatar: 'https://randomuser.me/api/portraits/women/26.jpg'
     },
     publishedAt: '2024-08-28T10:00:00Z',
     readTime: 8,
@@ -33,71 +33,72 @@ const MarketInsightsHub = () => {
   };
 
   const insights = [
+
     {
       id: '1',
-      title: 'Technology Sector Resilience: AI Revolution Drives Growth Despite Market Headwinds',
-      excerpt: `Artificial intelligence continues to reshape the technology landscape, creating unprecedented opportunities for investors. Our sector analysis identifies key players positioned for sustained growth despite broader market volatility.`,
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop',
+      title: 'ESG Investment Trends: Sustainable Portfolios Outperform Traditional Benchmarks',
+      excerpt: `Sustainable investing continues to gain momentum as ESG-focused portfolios demonstrate resilience and outperformance against traditional benchmarks.\n\nThis report delves into the latest trends, performance metrics, and strategic approaches for integrating ESG principles into investment decision-making.`,
+      image: 'https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg?w=400&h=250&fit=crop',
+      category: 'Investment Strategy',
+      author: {
+        name: 'Emma Thompson',
+        title: 'ESG Research Director',
+        avatar: 'https://randomuser.me/api/portraits/women/30.jpg'
+      },
+      publishedAt: '2024-08-29T09:15:00Z',
+      readTime: 7,
+      views: 1654
+    },    
+    {
+      id: '2',
+      title: 'Tech Sector Resilience: Capitalizing on AI-Driven Growth Amid Market Volatility',
+      excerpt: `Amidst broader market volatility, the technology sector, led by advancements in artificial intelligence, continues to exhibit robust growth.\n\nThis analysis explores key drivers of resilience within the sector, highlighting leading companies and investment opportunities poised to benefit from the AI revolution.`,
+      image: 'https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=400&h=250&fit=crop',
       category: 'Sector Focus',
       author: {
         name: 'Michael Rodriguez',
         title: 'Technology Analyst',
-        avatar: 'https://randomuser.me/api/portraits/men/45.jpg'
+        avatar: 'https://randomuser.me/api/portraits/men/44.jpg'
       },
       publishedAt: '2024-08-30T14:30:00Z',
       readTime: 6,
       views: 1923
     },
     {
-      id: '2',
-      title: 'ESG Investment Trends: Sustainable Portfolios Outperform Traditional Benchmarks',
-      excerpt: `Environmental, Social, and Governance (ESG) investing has evolved from a niche strategy to a mainstream approach. Our latest research demonstrates how ESG-focused portfolios are delivering superior risk-adjusted returns.`,
-      image: 'https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg?w=400&h=250&fit=crop',
-      category: 'Investment Strategy',
-      author: {
-        name: 'Emma Thompson',
-        title: 'ESG Research Director',
-        avatar: 'https://randomuser.me/api/portraits/women/28.jpg'
-      },
-      publishedAt: '2024-08-29T09:15:00Z',
-      readTime: 7,
-      views: 1654
-    },
-    {
       id: '3',
-      title: 'Emerging Markets Recovery: Identifying Opportunities in Post-Pandemic Growth',
-      excerpt: `Emerging markets are showing signs of robust recovery as global trade normalizes. We analyze key indicators and identify markets positioned for outperformance in the coming quarters.`,
-      image: 'https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg?w=400&h=250&fit=crop',
+      title: 'Cryptocurrency Regulation Update: Navigating the Evolving Legal Landscape',
+      excerpt: `Recent regulatory developments in the cryptocurrency space are reshaping the investment landscape for digital assets.\n\nThis report provides an in-depth analysis of new regulations, their implications for investors, and strategic considerations for incorporating cryptocurrencies into diversified portfolios.`,
+      image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop',
+      category: 'Regulatory Changes',
+      author: {
+        name: 'Jennifer Walsh',
+        title: 'Regulatory Affairs Specialist',
+        avatar: 'https://randomuser.me/api/portraits/women/51.jpg'
+      },
+      publishedAt: '2024-08-26T11:20:00Z',
+      readTime: 5,
+      views: 1789
+    },    
+    {
+      id: '4',
+      title: 'Emerging Markets Recovery: Identifying Growth Opportunities Post-Pandemic',
+      excerpt: `Emerging markets are showing signs of recovery as global economic conditions improve post-pandemic.\n\nThis analysis identifies key growth opportunities across emerging economies, focusing on sectors and companies well-positioned to capitalize on the recovery trajectory.`,
+      image: 'https://plus.unsplash.com/premium_photo-1742482666813-82d3db55f2bd?w=400&h=250&fit=crop',
       category: 'Market Analysis',
       author: {
         name: 'David Park',
         title: 'Global Markets Strategist',
-        avatar: 'https://randomuser.me/api/portraits/men/34.jpg'
+        avatar: 'https://randomuser.me/api/portraits/men/41.jpg'
       },
       publishedAt: '2024-08-27T16:45:00Z',
       readTime: 9,
       views: 2156
     },
     {
-      id: '4',
-      title: 'Cryptocurrency Regulation Update: Impact on Digital Asset Investment Strategies',
-      excerpt: `Recent regulatory developments in cryptocurrency markets are reshaping the digital asset landscape. Our analysis covers compliance requirements and strategic implications for institutional investors.`,
-      image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop',
-      category: 'Regulatory Changes',
-      author: {
-        name: 'Jennifer Walsh',
-        title: 'Regulatory Affairs Specialist',
-        avatar: 'https://randomuser.me/api/portraits/women/41.jpg'
-      },
-      publishedAt: '2024-08-26T11:20:00Z',
-      readTime: 5,
-      views: 1789
-    },
-    {
       id: '5',
-      title: 'Real Estate Investment Trusts: Navigating Interest Rate Sensitivity',
+      title: 'REITs in a Rising Rate Environment: Strategies for Defensive Growth',
       excerpt: `REITs face unique challenges in the current interest rate environment. We examine sector fundamentals and identify REITs with strong defensive characteristics and growth potential.`,
-      image: 'https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=400&h=250&fit=crop',
       category: 'Sector Focus',
       author: {
         name: 'Robert Kim',
@@ -110,14 +111,14 @@ const MarketInsightsHub = () => {
     },
     {
       id: '6',
-      title: 'Global Supply Chain Resilience: Investment Implications for Manufacturing Sectors',
-      excerpt: `Supply chain disruptions continue to impact global manufacturing. Our analysis identifies companies building resilient supply networks and the investment opportunities they present.`,
+      title: 'Supply Chain Resilience: Investment Opportunities Amid Global Disruptions',
+      excerpt: `Global supply chain disruptions have highlighted the need for resilient logistics and manufacturing strategies.\n\nThis report explores investment opportunities in companies leading the way in supply chain innovation and resilience.`,
       image: 'https://images.pixabay.com/photo/2019/12/30/14/56/supply-chain-4729715_1280.jpg?w=400&h=250&fit=crop',
       category: 'Market Analysis',
       author: {
         name: 'Lisa Anderson',
         title: 'Industrial Sector Analyst',
-        avatar: 'https://randomuser.me/api/portraits/women/37.jpg'
+        avatar: 'https://randomuser.me/api/portraits/women/60.jpg'
       },
       publishedAt: '2024-08-24T08:30:00Z',
       readTime: 8,
@@ -169,7 +170,7 @@ const MarketInsightsHub = () => {
 
     setFilteredInsights(filtered);
     setCurrentPage(1);
-  }, [activeCategory, searchQuery]);
+  }, [activeCategory, searchQuery]); 
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -193,8 +194,8 @@ const MarketInsightsHub = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Market Insights Hub - Meridian Capital</title>
-        <meta name="description" content="Stay ahead with Meridian Capital's expert market analysis, economic insights, and investment strategy updates. Access timely, actionable research from our investment professionals." />
+        <title>Market Insights Hub - Apex Capital</title>
+        <meta name="description" content="Stay ahead with Apex Capital's expert market analysis, economic insights, and investment strategy updates. Access timely, actionable research from our investment professionals." />
       </Helmet>
       <Header />
       {/* Hero Section */}
@@ -212,7 +213,7 @@ const MarketInsightsHub = () => {
             </h1>
             
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Access timely market analysis, economic outlooks, and investment strategies from Meridian's research team. 
+              Access timely market analysis, economic outlooks, and investment strategies from Apex' research team. 
               Stay informed with insights that drive confident investment decisions.
             </p>
 
@@ -448,13 +449,13 @@ const MarketInsightsHub = () => {
                 <div className="relative flex items-center">
                   <img
                     src="/logo-icon-white.svg"
-                    alt="Meridian Capital"
+                    alt="Apex Capital"
                     className="h-8 w-auto object-contain"
                   />
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full opacity-80"></div>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-semibold">Meridian Capital</h3>
+                  <h3 className="font-display text-xl font-semibold">Apex Capital</h3>
                   <p className="text-sm text-white/80">Market Intelligence Hub</p>
                 </div>
               </div>
@@ -472,7 +473,7 @@ const MarketInsightsHub = () => {
               <div className="space-y-2 text-sm">
                 <a href="/investment-strategies" className="block hover:text-accent brand-transition">Investment Strategies</a>
                 <a href="/performance-dashboard" className="block hover:text-accent brand-transition">Performance Dashboard</a>
-                <a href="/about-apex" className="block hover:text-accent brand-transition">About Meridian</a>
+                <a href="/about-apex" className="block hover:text-accent brand-transition">About Apex</a>
                 <a href="/contact-consultation" className="block hover:text-accent brand-transition">Contact Us</a>
               </div>
             </div>

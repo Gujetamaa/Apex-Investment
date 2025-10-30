@@ -12,86 +12,73 @@ const MarketInsights = () => {
     {
       id: 1,
       category: 'Market Analysis',
-      title: 'Federal Reserve Policy Shifts: Implications for Portfolio Strategy',
-      excerpt: `Recent Federal Reserve communications signal a potential pivot in monetary policy. Our analysis suggests this creates opportunities in specific sectors while requiring defensive positioning in others.`,
+      title: 'Federal Reserve Policy Shift: Implications for Portfolio Positioning',
+      excerpt:
+        `The Federal Reserve's recent policy adjustments signal a new phase in monetary strategy. Our analysis explores the potential impacts on various asset classes and offers guidance on portfolio positioning in this evolving landscape.`,
       author: 'Hannah Lee, CFA',
       authorRole: 'Chief Investment Officer',
       authorImage: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
       publishDate: '2025-08-29',
       readTime: '5 min read',
       tags: ['Federal Reserve', 'Monetary Policy', 'Portfolio Strategy'],
-      featured: true
+      featured: true,
+      // Emerald/silver, macro theme
+      image:
+        'https://unsplash.com/photos/hands-holding-smartphone-showing-stock-market-data-sqok1QIK1mw?q=80&w=1920&auto=format&fit=crop'
     },
     {
       id: 2,
       category: 'Economic Outlook',
-      title: 'Q4 2025 Economic Forecast: Navigating Uncertainty with Confidence',
-      excerpt: `Our quarterly economic outlook examines key indicators and their potential impact on investment strategies. We identify three critical themes for the remainder of 2025.`,
+      title: 'Q3 2025 Economic Forecast: Key Themes and Market Implications',
+      excerpt:
+        `As we enter the third quarter of 2025, our economic forecast highlights critical themes shaping the global economy. This report delves into growth projections, inflation trends, and sector-specific outlooks to inform strategic investment decisions.`,
       author: 'Michael Rodriguez, PhD',
       authorRole: 'Senior Economist',
       authorImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
       publishDate: '2025-08-27',
       readTime: '8 min read',
       tags: ['Economic Forecast', 'Market Outlook', 'Investment Strategy'],
-      featured: false
+      featured: false,
+      // Growth lines, green accents
+      image:
+        'https://images.unsplash.com/photo-1551281044-8c5eff1b5725?q=80&w=1920&auto=format&fit=crop'
     },
     {
       id: 3,
       category: 'Investment Strategy',
-      title: 'ESG Integration: Beyond Compliance to Alpha Generation',
-      excerpt: `Environmental, Social, and Governance factors are increasingly driving returns. Our research shows how thoughtful ESG integration can enhance portfolio performance.`,
+      title: 'ESG Investment Trends: Sustainable Portfolios Outperform Traditional Benchmarks',
+      excerpt:
+        `Sustainable investing continues to gain momentum as ESG-focused portfolios demonstrate resilience and outperformance against traditional benchmarks. This report delves into the latest trends, performance metrics, and strategic approaches for integrating ESG principles into investment decision-making.`,
       author: 'Jennifer Park, CFA',
       authorRole: 'Director of Sustainable Investing',
       authorImage: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
       publishDate: '2025-08-25',
       readTime: '6 min read',
       tags: ['ESG', 'Sustainable Investing', 'Alpha Generation'],
-      featured: false
+      featured: false,
+      // Nature/green energy with premium tone
+      image:
+        'https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1920&auto=format&fit=crop'
     }
   ];
 
   const marketHighlights = [
-    {
-      title: 'Technology Sector Rotation',
-      description: 'Large-cap tech showing resilience while growth stocks face headwinds',
-      impact: 'Positive',
-      icon: 'Cpu'
-    },
-    {
-      title: 'Fixed Income Opportunities',
-      description: 'Rising yields creating attractive entry points in quality bonds',
-      impact: 'Positive',
-      icon: 'TrendingUp'
-    },
-    {
-      title: 'International Diversification',
-      description: 'Emerging markets showing signs of stabilization and value',
-      impact: 'Neutral',
-      icon: 'Globe'
-    },
-    {
-      title: 'Alternative Investments',
-      description: 'Private equity and real assets providing portfolio diversification',
-      impact: 'Positive',
-      icon: 'Building'
-    }
+    { title: 'Technology Sector Rotation', description: 'Large-cap tech showing resilience while growth stocks face headwinds', impact: 'Positive', icon: 'Cpu' },
+    { title: 'Fixed Income Opportunities', description: 'Rising yields creating attractive entry points in quality bonds', impact: 'Positive', icon: 'TrendingUp' },
+    { title: 'International Diversification', description: 'Emerging markets showing signs of stabilization and value', impact: 'Neutral', icon: 'Globe' },
+    { title: 'Alternative Investments', description: 'Private equity and real assets providing portfolio diversification', impact: 'Positive', icon: 'Building' }
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentInsight((prev) => (prev + 1) % marketInsights?.length);
+      setCurrentInsight((prev) => (prev + 1) % marketInsights.length);
     }, 8000);
-
     return () => clearInterval(timer);
-  }, [marketInsights?.length]);
+  }, [marketInsights.length]);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date?.toLocaleDateString('en-US', { 
-      month: 'long', 
-      day: 'numeric', 
-      year: 'numeric' 
-    });
+    return date?.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   };
 
   return (
@@ -112,7 +99,7 @@ const MarketInsights = () => {
             Expert Market Commentary
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay informed with our team's latest analysis, economic forecasts, and strategic insights 
+            Stay informed with our team's latest analysis, economic forecasts, and strategic insights
             that drive our investment decisions.
           </p>
         </motion.div>
@@ -126,67 +113,70 @@ const MarketInsights = () => {
             className="lg:col-span-2"
           >
             <div className="bg-card border border-border rounded-xl overflow-hidden brand-shadow-subtle hover:brand-shadow-elevated brand-transition">
+              {/* Cover Image */}
+              <div className="relative">
+                <Image
+                  src={marketInsights[currentInsight]?.image}
+                  alt={marketInsights[currentInsight]?.title}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+              </div>
+
               <div className="p-8">
                 <div className="flex items-center space-x-2 mb-4">
                   <span className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                    {marketInsights?.[currentInsight]?.category}
+                    {marketInsights[currentInsight]?.category}
                   </span>
-                  <span className="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">
+                  <span className="px-3 py-1 bg-secondary/10 text-foreground text-sm font-medium rounded-full">
                     Featured
                   </span>
                 </div>
 
                 <h3 className="font-display text-2xl font-semibold text-foreground mb-4 leading-tight">
-                  {marketInsights?.[currentInsight]?.title}
+                  {marketInsights[currentInsight]?.title}
                 </h3>
 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {marketInsights?.[currentInsight]?.excerpt}
+                  {marketInsights[currentInsight]?.excerpt}
                 </p>
 
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
                     <Image
-                      src={marketInsights?.[currentInsight]?.authorImage}
-                      alt={marketInsights?.[currentInsight]?.author}
+                      src={marketInsights[currentInsight]?.authorImage}
+                      alt={marketInsights[currentInsight]?.author}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
                       <div className="font-medium text-foreground text-sm">
-                        {marketInsights?.[currentInsight]?.author}
+                        {marketInsights[currentInsight]?.author}
                       </div>
                       <div className="text-muted-foreground text-xs">
-                        {marketInsights?.[currentInsight]?.authorRole}
+                        {marketInsights[currentInsight]?.authorRole}
                       </div>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-sm text-muted-foreground">
-                      {formatDate(marketInsights?.[currentInsight]?.publishDate)}
+                      {formatDate(marketInsights[currentInsight]?.publishDate)}
                     </div>
                     <div className="text-xs text-muted-foreground">
-                      {marketInsights?.[currentInsight]?.readTime}
+                      {marketInsights[currentInsight]?.readTime}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {marketInsights?.[currentInsight]?.tags?.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-md"
-                    >
+                  {marketInsights[currentInsight]?.tags?.map((tag) => (
+                    <span key={tag} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-md">
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 <Link to="/market-insights-hub">
-                  <Button
-                    variant="outline"
-                    iconName="ArrowRight"
-                    iconPosition="right"
-                  >
+                  <Button variant="outline" iconName="ArrowRight" iconPosition="right">
                     Read Full Analysis
                   </Button>
                 </Link>
@@ -195,7 +185,7 @@ const MarketInsights = () => {
               {/* Insight Navigation */}
               <div className="px-8 pb-6">
                 <div className="flex items-center space-x-2">
-                  {marketInsights?.map((_, index) => (
+                  {marketInsights.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentInsight(index)}
@@ -223,27 +213,32 @@ const MarketInsights = () => {
               </h3>
 
               <div className="space-y-4">
-                {marketHighlights?.map((highlight, index) => (
+                {marketHighlights.map((highlight, index) => (
                   <motion.div
-                    key={highlight?.title}
+                    key={highlight.title}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
                     className="flex items-start space-x-3 p-3 rounded-lg hover:bg-muted/50 brand-transition"
                   >
-                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                      highlight?.impact === 'Positive' ?'bg-success/10 text-success' 
-                        : highlight?.impact === 'Negative' ?'bg-error/10 text-error' :'bg-muted text-muted-foreground'
-                    }`}>
-                      <Icon name={highlight?.icon} size={16} />
+                    <div
+                      className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                        highlight.impact === 'Positive'
+                          ? 'bg-success/10 text-success'
+                          : highlight.impact === 'Negative'
+                          ? 'bg-error/10 text-error'
+                          : 'bg-muted text-muted-foreground'
+                      }`}
+                    >
+                      <Icon name={highlight.icon} size={16} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-medium text-foreground text-sm mb-1">
-                        {highlight?.title}
+                        {highlight.title}
                       </h4>
                       <p className="text-muted-foreground text-xs leading-relaxed">
-                        {highlight?.description}
+                        {highlight.description}
                       </p>
                     </div>
                   </motion.div>
@@ -280,41 +275,50 @@ const MarketInsights = () => {
           viewport={{ once: true }}
           className="grid md:grid-cols-2 gap-6 mb-12"
         >
-          {marketInsights?.slice(1)?.map((insight, index) => (
+          {marketInsights.slice(1).map((insight, index) => (
             <motion.div
-              key={insight?.id}
+              key={insight.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-card border border-border rounded-xl p-6 brand-shadow-subtle hover:brand-shadow-elevated brand-transition brand-hover-lift"
+              className="bg-card border border-border rounded-xl overflow-hidden brand-shadow-subtle hover:brand-shadow-elevated brand-transition brand-hover-lift"
             >
-              <div className="flex items-center space-x-2 mb-3">
-                <span className="px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full">
-                  {insight?.category}
-                </span>
-              </div>
+              {/* Card Thumbnail */}
+              <Image
+                src={insight.image}
+                alt={insight.title}
+                className="w-full h-40 object-cover"
+              />
 
-              <h3 className="font-semibold text-foreground mb-3 leading-tight">
-                {insight?.title}
-              </h3>
-
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                {insight?.excerpt?.substring(0, 120)}...
-              </p>
-
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <Image
-                    src={insight?.authorImage}
-                    alt={insight?.author}
-                    className="w-6 h-6 rounded-full object-cover"
-                  />
-                  <span className="text-xs text-muted-foreground">{insight?.author}</span>
+              <div className="p-6">
+                <div className="flex items-center space-x-2 mb-3">
+                  <span className="px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full">
+                    {insight.category}
+                  </span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs text-muted-foreground">
-                  <Icon name="Clock" size={12} />
-                  <span>{insight?.readTime}</span>
+
+                <h3 className="font-semibold text-foreground mb-3 leading-tight">
+                  {insight.title}
+                </h3>
+
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  {insight.excerpt.substring(0, 120)}...
+                </p>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Image
+                      src={insight.authorImage}
+                      alt={insight.author}
+                      className="w-6 h-6 rounded-full object-cover"
+                    />
+                    <span className="text-xs text-muted-foreground">{insight.author}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-xs text-muted-foreground">
+                    <Icon name="Clock" size={12} />
+                    <span>{insight.readTime}</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -329,12 +333,7 @@ const MarketInsights = () => {
           className="text-center"
         >
           <Link to="/market-insights-hub">
-            <Button
-              variant="outline"
-              size="lg"
-              iconName="BookOpen"
-              iconPosition="left"
-            >
+            <Button variant="outline" size="lg" iconName="BookOpen" iconPosition="left">
               Explore All Market Insights
             </Button>
           </Link>

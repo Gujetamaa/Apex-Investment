@@ -9,8 +9,8 @@ const InvestmentPhilosophy = () => {
 
   const philosophyPrinciples = [
     {
-      title: 'Evidence-Based Investing',
-      description: 'Our investment decisions are grounded in rigorous research, quantitative analysis, and decades of market data. We believe in letting evidence, not emotions, guide our strategy.',
+      title: 'Data-Driven Decision Making',
+      description: 'Our investment choices are grounded in rigorous data analysis and empirical evidence, ensuring that every decision is backed by solid research and statistical validation.',
       icon: 'BarChart3',
       details: [
         'Comprehensive market research and analysis',
@@ -21,8 +21,8 @@ const InvestmentPhilosophy = () => {
       color: 'from-primary to-secondary'
     },
     {
-      title: 'Long-Term Value Creation',
-      description: 'We focus on sustainable wealth building through patient capital allocation, avoiding short-term market noise to capture long-term growth opportunities.',
+      title: 'Long-Term Focus',
+      description: 'We prioritize sustainable growth over short-term gains. Our strategies are designed to weather market volatility and capitalize on long-term trends for enduring success.',
       icon: 'TrendingUp',
       details: [
         'Strategic asset allocation with 5-10 year horizons',
@@ -33,8 +33,8 @@ const InvestmentPhilosophy = () => {
       color: 'from-secondary to-trust'
     },
     {
-      title: 'Risk-Adjusted Returns',
-      description: 'Superior returns mean nothing without proper risk management. We optimize portfolios for the best risk-adjusted outcomes aligned with your goals.',
+      title: 'Robust Risk Management',
+      description: 'Protecting your capital is as important as growing it. We employ sophisticated risk management techniques to optimize returns while minimizing potential downsides.',
       icon: 'Shield',
       details: [
         'Comprehensive risk assessment and monitoring',
@@ -45,8 +45,8 @@ const InvestmentPhilosophy = () => {
       color: 'from-trust to-growth'
     },
     {
-      title: 'Transparent Partnership',
-      description: 'Your success is our measure. We maintain complete transparency in our processes, fees, and performance while providing clear communication every step of the way.',
+      title: 'Transparency & Communication',
+      description: 'We believe in maintaining open lines of communication with our clients. You will always be informed about your investments, our strategies, and any changes that may impact your portfolio.',
       icon: 'Eye',
       details: [
         'Real-time portfolio performance reporting',
@@ -61,23 +61,23 @@ const InvestmentPhilosophy = () => {
   const coreValues = [
     {
       title: 'Fiduciary Responsibility',
-      description: 'We are legally and ethically bound to act in your best interests at all times',
+      description: 'We are committed to acting in the best interests of our clients at all times',
       icon: 'Scale'
     },
     {
-      title: 'Continuous Innovation',
+      title: 'Innovation & Adaptability',
       description: 'We constantly evolve our strategies to adapt to changing market conditions',
       icon: 'Lightbulb'
+    },
+    {
+      title: 'Institutional Expertise',
+      description: 'Leveraging decades of experience managing assets for institutions and high-net-worth individuals',
+      icon: 'Building'
     },
     {
       title: 'Client-Centric Approach',
       description: 'Every decision is made with your unique goals and circumstances in mind',
       icon: 'Heart'
-    },
-    {
-      title: 'Institutional Quality',
-      description: 'We bring institutional-grade investment management to individual investors',
-      icon: 'Building'
     }
   ];
 
@@ -310,7 +310,7 @@ const InvestmentPhilosophy = () => {
               and maintaining unwavering focus on your long-term goals."
             </blockquote>
             <cite className="text-muted-foreground font-medium">
-              — Meridian Capital Investment Committee
+              — Apex Capital Investment Committee
             </cite>
           </div>
         </motion.div>

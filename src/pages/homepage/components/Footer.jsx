@@ -56,14 +56,14 @@ const Footer = () => {
       <div className="relative flex items-center">
         <img
           src="/logo-horizontal.svg"
-          alt="Meridian Capital"
+          alt="Apex Capital"
           className="h-8 w-auto object-contain"
         />
         <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full opacity-80"></div>
       </div>
       <div className="flex flex-col">
         <span className="font-display font-semibold text-xl text-foreground">
-          Meridian
+          Apex
         </span>
         <span className="text-xs text-muted-foreground font-medium tracking-wide">
           CAPITAL
@@ -165,7 +165,7 @@ const Footer = () => {
         <div className="py-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-muted-foreground">
-              <span>© {currentYear} Meridian Capital. All rights reserved.</span>
+              <span>© {currentYear} Apex Capital. All rights reserved.</span>
               <div className="flex items-center space-x-4">
                 <Link to="#" className="hover:text-primary brand-transition">Privacy Policy</Link>
                 <Link to="#" className="hover:text-primary brand-transition">Terms of Service</Link>
@@ -200,7 +200,7 @@ const Footer = () => {
               should not be construed as investment advice.
             </p>
             <p>
-              Meridian Capital is a registered investment advisor. Registration does not imply a certain level of skill 
+              Apex Capital is a registered investment advisor. Registration does not imply a certain level of skill 
               or training. Please consult with a qualified financial advisor before making investment decisions.
             </p>
           </div>

@@ -27,7 +27,7 @@ const NewsletterSignup = () => {
           <Icon name="CheckCircle" size={32} className="text-white" />
         </div>
         <h3 className="font-display text-xl font-semibold text-white mb-2">
-          Welcome to Meridian Insights!
+          Welcome to Apex Insights!
         </h3>
         <p className="text-white/90 text-sm mb-4">
           You'll receive our weekly market analysis and exclusive investment insights directly in your inbox.

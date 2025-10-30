@@ -50,8 +50,8 @@ const PerformanceDashboard = () => {
   return (
     <>
       <Helmet>
-        <title>Performance Dashboard - Meridian Capital</title>
-        <meta name="description" content="Real-time portfolio performance tracking with transparent metrics, risk analysis, and benchmark comparisons. Monitor your investment progress with Meridian Capital's comprehensive dashboard." />
+        <title>Performance Dashboard - Apex Capital</title>
+        <meta name="description" content="Real-time portfolio performance tracking with transparent metrics, risk analysis, and benchmark comparisons. Monitor your investment progress with Apex Capital's comprehensive dashboard." />
         <meta name="keywords" content="portfolio performance, investment dashboard, risk metrics, asset allocation, benchmark comparison" />
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -163,7 +163,7 @@ const PerformanceDashboard = () => {
                     </p>
                     <p>
                       <strong>Data Accuracy:</strong> While we strive for accuracy, market data may be delayed or subject to revision. 
-                      Please consult your account statements for official records. Meridian Capital is a registered investment advisor with the SEC.
+                      Please consult your account statements for official records. Apex Capital is a registered investment advisor with the SEC.
                     </p>
                   </div>
                 </div>
@@ -181,13 +181,13 @@ const PerformanceDashboard = () => {
                   <div className="relative flex items-center">
                     <img
                       src="/logo-icon-white.svg"
-                      alt="Meridian Capital"
+                      alt="Apex Capital"
                       className="h-8 w-auto object-contain"
                     />
                     <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full opacity-80"></div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-display font-semibold">Meridian Capital</h3>
+                    <h3 className="text-xl font-display font-semibold">Apex Capital</h3>
                     <p className="text-sm text-primary-foreground/80">Performance Excellence</p>
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const PerformanceDashboard = () => {
                 <ul className="space-y-2 text-sm text-primary-foreground/80">
                   <li><a href="/investment-strategies" className="hover:text-primary-foreground brand-transition">Investment Strategies</a></li>
                   <li><a href="/market-insights-hub" className="hover:text-primary-foreground brand-transition">Market Insights</a></li>
-                  <li><a href="/about-apex" className="hover:text-primary-foreground brand-transition">About Meridian</a></li>
+                  <li><a href="/about-apex" className="hover:text-primary-foreground brand-transition">About Apex</a></li>
                   <li><a href="/contact-consultation" className="hover:text-primary-foreground brand-transition">Contact Us</a></li>
                 </ul>
               </div>
@@ -215,7 +215,7 @@ const PerformanceDashboard = () => {
               <div>
                 <h4 className="text-sm font-semibold mb-4">Support</h4>
                 <ul className="space-y-2 text-sm text-primary-foreground/80">
-                  <li>1-800-MERIDIAN</li>
+                  <li>1-800-APEX</li>
                   <li>support@apexcapital.com</li>
                   <li>Monday - Friday, 8AM - 6PM EST</li>
                 </ul>
@@ -223,7 +223,7 @@ const PerformanceDashboard = () => {
             </div>
             
             <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/80">
-              <p>&copy; {new Date()?.getFullYear()} Meridian Capital. All rights reserved. | Privacy Policy | Terms of Service</p>
+              <p>&copy; {new Date()?.getFullYear()} Apex Capital. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
           </div>
         </footer>

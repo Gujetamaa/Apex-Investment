@@ -28,22 +28,22 @@ const HeroSection = () => {
 
   const investmentPathways = [
     {
-      title: 'Affluent Professional Solutions',
-      description: 'Sophisticated strategies for high-earning professionals seeking growth and tax efficiency',
+      title: 'Executive Wealth Management',
+      description: 'Tailored strategies for high-net-worth individuals and corporate executives',
       icon: 'Briefcase',
       color: 'from-primary to-secondary',
       features: ['Tax-Optimized Portfolios', 'Executive Compensation Planning', 'Alternative Investments']
     },
     {
-      title: 'Pre-Retirement Planning',
-      description: 'Wealth preservation and income generation strategies for approaching retirement',
+      title: 'Retirement Wealth Management',
+      description: 'Strategies focused on preserving and growing wealth for a secure retirement',
       icon: 'Shield',
       color: 'from-secondary to-trust',
       features: ['Risk Management', 'Income Generation', 'Estate Planning']
     },
     {
-      title: 'Entrepreneur Wealth Management',
-      description: 'Comprehensive solutions for business owners with complex financial situations',
+      title: 'Entrepreneurial Wealth Management',
+      description: 'Comprehensive solutions for business owners to manage personal and business finances',
       icon: 'TrendingUp',
       color: 'from-trust to-growth',
       features: ['Business Exit Planning', 'Diversification Strategies', 'Legacy Wealth Building']
