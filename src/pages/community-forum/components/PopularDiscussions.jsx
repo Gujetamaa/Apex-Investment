@@ -10,7 +10,7 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
   const discussions = [
     {
       id: 1,
-      title: 'ETF Allocation for a Long-Term Growth Portfolio',
+      title: 'Optimal ETF Allocation for Long-Term Growth',
       author: 'Hannah Lee',
       authorRole: 'Private Client',
       category: 'Portfolio Strategy & Allocation',
@@ -21,15 +21,15 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
       isExpert: false,
       hasExpertReply: true,
       snippet:
-        'Seeking input on an ETF mix for a 25–30 year horizon. Considering a 70/30 equity-to-fixed income allocation — thoughts on adding international exposure?',
+        'I am considering shifting a portion of my portfolio into ETFs focused on technology and healthcare for long-term growth. What allocation percentages would you recommend for a balanced risk approach?',
       tags: ['ETFs', 'Portfolio Design', 'Long-Term Growth']
     },
     {
       id: 2,
-      title: 'Fed Rate Decision: Market Positioning & Sector Rotation',
+      title: 'Adjusting Sector Weights Amid Fed Policy Changes',
       author: 'Dr. Porto Garcia',
       authorRole: 'Senior Portfolio Manager',
-      category: 'Market Insights & Economic Outlook',
+      category: 'Macroeconomic Trends & Market Analysis',
       replies: 52,
       views: 1320,
       likes: 73,
@@ -37,13 +37,13 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
       isExpert: true,
       hasExpertReply: true,
       snippet:
-        'A breakdown of the Fed’s latest rate stance and its impact on duration risk, credit spreads, and equity sector performance.',
+        'With the Fed signaling a pause, how are you adjusting sector allocations? Discussing potential rotations into tech and consumer discretionary ahead of Q4 earnings.',
       tags: ['Fed Policy', 'Interest Rates', 'Market Outlook']
     },
     {
       id: 3,
       title: 'Tax-Loss Harvesting Opportunities Before Year-End',
-      author: 'FinancialPlans_',
+      author: 'TaxPro_Maria',
       authorRole: 'CFP® Professional',
       category: 'Tax & Estate Optimization',
       replies: 36,
@@ -58,8 +58,8 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
     },
     {
       id: 4,
-      title: 'First-Time Investor: How Should I Begin?',
-      author: 'FirstTimeInvestor2025',
+      title: 'Getting Started: Best Investments for New Investors',
+      author: 'NewInvestor_Amy',
       authorRole: 'Emerging Investor',
       category: 'Investor Education & Newcomers',
       replies: 22,
@@ -74,23 +74,23 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
     },
     {
       id: 5,
-      title: 'Real Estate vs. Public Markets: 2025 Diversification Outlook',
-      author: 'WealthBuilder_James',
+      title: 'Real Estate vs. REITs: Diversifying with Alternative Assets',
+      author: 'AltInvest_Greg',
       authorRole: 'Accredited Investor',
       category: 'Alternative & Private Investments',
       replies: 42,
-      views: 940,
-      likes: 33,
+      views: 2040,
+      likes: 330,
       timeAgo: '10 hours ago',
       isExpert: false,
       hasExpertReply: true,
       snippet:
-        'Comparing expected returns between direct real estate, REITs, and equity markets amid shifting interest-rate conditions.',
+        'Exploring the pros and cons of direct real estate investments versus REITs for portfolio diversification. What are the key considerations for each?',
       tags: ['Real Estate', 'Diversification', 'Alternative Assets']
     },
     {
       id: 6,
-      title: 'Roth IRA vs. Traditional IRA: Which Is Right for You?',
+      title: 'Roth vs. Traditional IRA: Which is Better for Retirement?',
       author: 'RetirementExpert_Lianne',
       authorRole: 'Retirement Planner, CFP®',
       category: 'Retirement & Income Planning',
@@ -101,7 +101,7 @@ const PopularDiscussions = ({ isExpertMode = false }) => {
       isExpert: true,
       hasExpertReply: true,
       snippet:
-        'A comprehensive comparison of Roth and Traditional IRAs—eligibility, tax advantages, withdrawal rules, and long-term growth potential.',
+        'With changing tax landscapes, how do you decide between Roth and Traditional IRAs for maximizing retirement savings and tax efficiency?',
       tags: ['Retirement', 'IRA', 'Tax Planning']
     }
   ];

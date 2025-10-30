@@ -14,14 +14,14 @@ const MissionSection = () => {
       description: "We empower our clients through knowledge, helping them understand their investments and make informed decisions."
     },
     {
-      icon: "Handshake",
-      title: "Partnership Mindset",
-      description: "We build long-term relationships based on trust, mutual respect, and shared commitment to your financial success."
-    },
-    {
       icon: "Target",
       title: "Goal-Oriented",
       description: "Every strategy is tailored to your specific objectives, risk tolerance, and life circumstances."
+    },    
+    {
+      icon: "Handshake",
+      title: "Partnership Mindset",
+      description: "We build long-term relationships based on trust, mutual respect, and shared commitment to your financial success."
     }
   ];
 
