@@ -77,7 +77,8 @@ const Header = () => {
                 to={item?.path}
                 className={`text-sm font-medium brand-transition relative group ${
                   isActivePath(item?.path)
-                    ? 'text-primary' :'text-muted-foreground hover:text-foreground'
+                    ? 'text-primary'
+                    : 'text-black hover:text-primary'
                 }`}
               >
                 {item?.name}
@@ -155,7 +156,8 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-2 text-sm font-medium brand-transition ${
                   isActivePath(item?.path)
-                    ? 'text-primary' :'text-muted-foreground hover:text-foreground'
+                    ? 'text-primary'
+                    : 'text-black hover:text-primary'
                 }`}
               >
                 {item?.name}
@@ -166,9 +168,10 @@ const Header = () => {
                 key={item?.path}
                 to={item?.path}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block py-2 text-sm font-medium brand-transition ${
+                className={`block px-4 py-2 text-sm brand-transition ${
                   isActivePath(item?.path)
-                    ? 'text-primary' :'text-muted-foreground hover:text-foreground'
+                    ? 'text-primary bg-muted'
+                    : 'text-black hover:text-primary hover:bg-muted'
                 }`}
               >
                 {item?.name}
@@ -195,16 +198,16 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-2 text-xs">
             <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2 text-muted-foreground">
+              <div className="flex items-center space-x-2 text-black">
                 <Icon name="Shield" size={14} />
                 <span>SEC Registered</span>
               </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
+              <div className="flex items-center space-x-2 text-black">
                 <Icon name="Users" size={14} />
-                <span>Trusted by 500+ Investors</span>
+                <span>Trusted by 600+ Investors</span>
               </div>
             </div>
-            <div className="hidden sm:flex items-center space-x-2 text-muted-foreground">
+            <div className="hidden sm:flex items-center space-x-2 text-black">
               <Icon name="TrendingUp" size={14} />
               <span className="font-mono">$2.8B+ Assets Under Management</span>
             </div>

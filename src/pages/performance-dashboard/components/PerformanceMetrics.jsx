@@ -16,17 +16,6 @@ const PerformanceMetrics = () => {
     },
     {
       id: 2,
-      title: "Sharpe Ratio",
-      value: "1.42",
-      change: "+0.08",
-      changeType: "positive",
-      period: "12M",
-      description: "Risk-adjusted return measurement",
-      icon: "Target",
-      benchmark: "S&P 500: 1.18"
-    },
-    {
-      id: 3,
       title: "Maximum Drawdown",
       value: "-4.2%",
       change: "-0.3%",
@@ -35,6 +24,17 @@ const PerformanceMetrics = () => {
       description: "Largest peak-to-trough decline",
       icon: "TrendingDown",
       benchmark: "S&P 500: -8.1%"
+    },
+    {
+      id: 3,
+      title: "Sharpe Ratio",
+      value: "1.42",
+      change: "+0.08",
+      changeType: "positive",
+      period: "12M",
+      description: "Risk-adjusted return measurement",
+      icon: "Target",
+      benchmark: "S&P 500: 1.18"
     },
     {
       id: 4,
@@ -48,17 +48,6 @@ const PerformanceMetrics = () => {
       benchmark: "S&P 500: 16.4%"
     },
     {
-      id: 5,
-      title: "Beta",
-      value: "0.78",
-      change: "-0.05",
-      changeType: "neutral",
-      period: "36M",
-      description: "Sensitivity to market movements",
-      icon: "BarChart3",
-      benchmark: "Market: 1.00"
-    },
-    {
       id: 6,
       title: "Alpha",
       value: "+5.2%",
@@ -68,6 +57,17 @@ const PerformanceMetrics = () => {
       description: "Excess return vs. benchmark",
       icon: "Zap",
       benchmark: "Outperformance"
+    },
+    {
+      id: 5,
+      title: "Beta",
+      value: "0.78",
+      change: "-0.05",
+      changeType: "neutral",
+      period: "36M",
+      description: "Sensitivity to market movements",
+      icon: "BarChart3",
+      benchmark: "Market: 1.00"
     }
   ];
 

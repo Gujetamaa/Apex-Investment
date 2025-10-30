@@ -64,8 +64,8 @@ const PerformanceDashboard = () => {
 
   const keyMetrics = [
     { title: 'Total Return (YTD)', value: '18.9%', change: '+2.7%', isPositive: true, icon: 'TrendingUp', hint: 'vs S&P 500: 16.2%' },
-    { title: 'Sharpe Ratio',       value: '1.34',  change: '+0.12', isPositive: true, icon: 'Target',      hint: 'vs Benchmark: 1.22' },
     { title: 'Max Drawdown',       value: '-3.2%', change: '-0.8%', isPositive: true, icon: 'Shield',      hint: 'vs S&P 500: -5.1%' },
+    { title: 'Sharpe Ratio',       value: '1.34',  change: '+0.12', isPositive: true, icon: 'Target',      hint: 'vs Benchmark: 1.22' },
     { title: 'Alpha (Annualized)', value: '2.7%',  change: '+0.4%', isPositive: true, icon: 'Zap',         hint: 'Excess Return' }
   ];
 

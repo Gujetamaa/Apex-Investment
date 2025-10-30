@@ -18,7 +18,7 @@ const HeroSection = () => {
                 <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
                   <Icon name="Compass" size={24} className="text-accent" />
                 </div>
-                <span className="text-accent font-medium text-sm tracking-wide uppercase">
+                <span className="text-gray-300 font-medium text-sm tracking-wide uppercase">
                   Your Leader in Finance
                 </span>
               </div>
@@ -28,7 +28,7 @@ const HeroSection = () => {
                 <br />Capital
               </h1>
               <p className="text-xl text-white/90 leading-relaxed max-w-2xl">
-                Founded on the principle that sophisticated investment management should be transparent, accessible, and deeply personal. We serve as your compass in navigating complex financial landscapes.
+                Apex Capital redefines investment management through clarity, strategy, and leadership — empowering investors to rise with confidence in every market condition.
               </p>
             </div>
             
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Founded 2018</p>
-                  <p className="text-sm text-white/80">5+ Years of Excellence</p>
+                  <p className="text-sm text-white/80">7+ Years of Excellence</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -47,7 +47,7 @@ const HeroSection = () => {
                   <Icon name="Users" size={20} />
                 </div>
                 <div>
-                  <p className="font-semibold">500+ Clients</p>
+                  <p className="font-semibold">600+ Clients</p>
                   <p className="text-sm text-white/80">Trusted Partnerships</p>
                 </div>
               </div>

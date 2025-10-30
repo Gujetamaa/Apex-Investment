@@ -213,8 +213,8 @@ const MarketInsightsHub = () => {
             </h1>
             
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Access timely market analysis, economic outlooks, and investment strategies from Apex' research team. 
-              Stay informed with insights that drive confident investment decisions.
+              Access in-depth research, macroeconomic perspectives, and portfolio strategies 
+              designed by Apex analysts to help you stay ahead of market shifts.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">

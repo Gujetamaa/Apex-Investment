@@ -99,8 +99,8 @@ const MarketInsights = () => {
             Expert Market Commentary
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay informed with our team's latest analysis, economic forecasts, and strategic insights
-            that drive our investment decisions.
+            Insightful analysis and market foresight — 
+            empowering smarter investment decisions with Apex’s expert-driven guidance.
           </p>
         </motion.div>
 
@@ -253,7 +253,7 @@ const MarketInsights = () => {
                 <h3 className="font-semibold">Weekly Market Brief</h3>
               </div>
               <p className="text-sm opacity-90 mb-4">
-                Get our expert analysis delivered to your inbox every Monday morning.
+                Start your week smart: expert analysis delivered every Monday morning.
               </p>
               <Button
                 variant="secondary"

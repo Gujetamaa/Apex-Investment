@@ -114,15 +114,14 @@ const HeroSection = () => {
               </div>
 
               <h1 className="font-display text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Navigate with
+                Invest with
                 <span className="block text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
-                  Confidence
+                  Purpose & Precision
                 </span>
               </h1>
 
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Sophisticated investment management that bridges complex strategies with clear, confident decision-making. 
-                Your financial future deserves more than generic solutions.
+                Sophisticated investment management that bridges complex strategies with clear, confident decision-making for discerning investors.
               </p>
             </div>
 
